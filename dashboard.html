@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Extension</title>
+    <style>body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 15px;
+        font-size: medium;
+    }
+    .h1{
+        align-items: center;
+    }
+    .item{
+        margin: 9px;
+    }
+    .chart-wrapper{
+        width: 300px;
+        height: 300px;
+        margin: 1px auto;
+        align-self: flex-start;
+    }
+    canvas{
+        width: 100%;
+        height: 100%;
+       
+    }
+    .chart-container{
+        width:500px;
+        height:500px;
+        margin:auto;
+        align-self: flex-end;
+    }
+    </style>
+</head>
+<body>
+    <h1>Weekly Productivity Report.</h1>
+    <h3 id="productive"></h3>
+    <h3 id="unproductive"></h3>
+    <p id="report"></p>
+    <p id="productive"></p>
+    <p id="unproductive"></p>
+    <div class="chart-wrapper">
+    <canvas id="productivityChart" width="50" height="50" style="border:2px solid black"></canvas></div>
+    <div class="chart-container">
+    <canvas id="siteChart" width="500" height="500" style="border:2px solid black"></canvas></div>
+    <script src="chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+
+    
+</body>
+</html>
